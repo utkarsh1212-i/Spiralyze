@@ -45,34 +45,37 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(form)
 
     form.addEventListener('submit', function(event) {
-        // event.preventDefault(); // Prevent form submission to check validation
+        event.preventDefault()
+        // history.pushState('thankyou.html')
+        window.location.href = 'thankyou.html'
 
-        const requiredFields = form.querySelectorAll(' .form__group [required]');
-        console.log(requiredFields , 'required')
-        
-        requiredFields.forEach(field => {
-            if (!field.value.trim()) {
-                field.classList.add('error');
-                const label = field.nextElementSibling;
-                if (label.classList.contains('form__label')) {
-                    label.classList.add('error');
-                }
-            } else {
-                field.classList.remove('error');
-                const label = field.nextElementSibling;
-                if (label.classList.contains('form__label')) {
-                    label.classList.remove('error');
-                }
-            }
-        });
 
-        // Check if any required field is empty
-        const isEmpty = Array.from(requiredFields).some(field => !field.value.trim());
+        // const requiredFields = form.querySelectorAll(' .form__group [required]');
+        // console.log(requiredFields , 'required')
         
-        if (!isEmpty) {
-            // Submit the form if all required fields are filled
-            form.submit();
-        }
+        // requiredFields.forEach(field => {
+        //     if (!field.value.trim()) {
+        //         field.classList.add('error');
+        //         const label = field.nextElementSibling;
+        //         if (label.classList.contains('form__label')) {
+        //             label.classList.add('error');
+        //         }
+        //     } else {
+        //         field.classList.remove('error');
+        //         const label = field.nextElementSibling;
+        //         if (label.classList.contains('form__label')) {
+        //             label.classList.remove('error');
+        //         }
+        //     }
+        // });
+
+        // // Check if any required field is empty
+        // const isEmpty = Array.from(requiredFields).some(field => !field.value.trim());
+        
+        // if (!isEmpty) {
+        //     // Submit the form if all required fields are filled
+        //     form.submit();
+        // }
     });
 });
 //caraousel code
