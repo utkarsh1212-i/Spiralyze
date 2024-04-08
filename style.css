@@ -1,0 +1,1295 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    /* width: 100%; */
+}
+
+
+.hero {
+    height: 100vh;
+    background: url('./assets/Group\ 54.png');
+    background-size: cover;
+    /* Adjust according to your image size preferences */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.linksection {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    /* width: 30rem; */
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.banner {
+    width: 50%;
+    /* Set banner width to half of the screen */
+    padding: 4rem;
+    /* Add padding for spacing */
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+    /* Add margin to separate h2 from p */
+}
+
+#bannertext {
+    margin: 0;
+    line-height: 1.5rem;
+    /* Remove default margin to avoid extra spacing */
+}
+
+.herohead {
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family:sans-serif ; */
+    width: 50%;
+    font-weight: bold;
+    color: transparent  ;
+    -webkit-text-stroke: 1px white;
+    /* text-stroke: 1px white */
+}
+
+.intervention {
+    font-size: 4rem;
+    /* Adjust font size as needed */
+    font-weight: bold;
+
+}
+
+#bannertext {
+    text-wrap: wrap;
+}
+
+.form-container {
+    width: 50%;
+    padding: 2rem;
+}
+
+form {
+    /* width: 25rem; */
+    width: 26rem;
+    height: 26rem;
+
+    margin: 20px auto;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, rgba(42, 125, 108, 0.8) 100%, rgba(63, 103, 94, 0.8) 76%);
+}
+
+#contacttext {
+    text-align: center;
+    font-weight: bold;
+}
+
+#namebox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+#emailbox {
+    display: flex;
+    /* margin-top: 0.5rem; */
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+input {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 3rem;
+    width: 20rem;
+    border: #fff;
+    background: transparent;
+}
+
+input::placeholder {
+    color: #fff;
+    /* Choose your desired color */
+}
+
+input:focus {
+    border: #fff;
+}
+
+select {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+    outline: 0;
+    height: 3rem;
+    border: #fff;
+    background: transparent;
+}
+
+select>option {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* -webkit-appearance: auto;
+    appearance: unset; */
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#formbutton:hover {
+    position: relative;
+    bottom: 2px;
+}
+
+#formbutton:active {
+    background-color: #35BB9C;
+}
+
+#formbutton {
+    background-color: #5BC8AF;
+    width: 13rem;
+    height: 3rem;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 1px rgba(5, 5, 5, 0.1);
+}
+
+select {
+    appearance: none;
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+#weunderstand {
+
+    background-color: #F5F5F5;
+    padding: 8rem;
+}
+
+#organize {
+    padding: 8rem
+}
+
+.weunderstandbox {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.paradiv {
+    text-align: start;
+    line-height: 1.5rem;
+}
+
+.weunderstandgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem
+}
+
+.box {
+    width: 100%;
+    height: auto;
+}
+
+.imagediv img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.textdiv {
+    width: 100%;
+}
+
+.paradiv {
+    /* font-size: 16px; */
+    line-height: 2;
+}
+
+.weunderstandhone {
+    margin-right: 0.6rem;
+}
+
+.we {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    text-shadow:
+        1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* font-size: 50px; */
+}
+
+.understand {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #000;
+    opacity: 0.1;
+}
+
+#btn {
+    background-color: transparent;
+    color: #5BC8AF;
+    width: 100%;
+    height: 3rem;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #007bff; */
+    border: 3px solid #5BC8AF;
+    border-radius: 5px;
+    cursor: pointer;
+    /* box-shadow:  0 2px 2px 1px rgba(5, 5, 5, 0.1) ; */
+}
+
+#btn:hover {
+    position: relative;
+    bottom: 2px;
+}
+
+.paragrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.organizetextdiv {
+    text-align: start;
+    line-height: 1.5rem;
+}
+
+#italictext {
+    font-size: large;
+}
+
+.btn-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 2rem;
+
+}
+
+.organizebtn {
+    background-color: transparent;
+    color: #000;
+    width: 100%;
+    height: 6rem;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #007bff; */
+    border: 2px solid #5BC8AF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.organizebtn:hover {
+    color: #5BC8AF;
+
+}
+
+#infodiv {
+    display: none;
+}
+
+#insurancetool:hover + #infodiv {
+    display: block;
+}
+
+.videosection {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: auto;
+    height: auto;
+    /* background-image: url('./assets/image\ 2.png'); */
+
+    /* border: 2px solid red; */
+}
+
+
+
+
+.infodiv {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    padding: 3rem;
+    background: linear-gradient(to bottom, #305D52 0%, #153F38 100%);
+
+
+}
+
+.watch {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+#videosectionwatch {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.playerdiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/playerImage.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+
+.playerdiv {
+    /* Hide any overflow */
+}
+
+.playerdiv video {
+    width: 50%;
+    /* Set video width to 100% of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Ensure block-level display */
+    position: absolute;
+    /* Position the video absolutely */
+    top: 25%;
+    /* Position from the top */
+    left: 20%;
+    /* Position from the left */
+}
+
+.playbtnclass {
+    z-index: 10;
+}
+
+.playbtnclass:hover {
+    cursor: pointer;
+
+}
+
+.playerdiv img {
+    max-width: 100%;
+    height: auto;
+}
+.checkmark{
+    position: relative;
+    right: 2rem;
+}
+
+.videoparadiv {
+    width: 30rem;
+    margin-top: 3rem;
+}
+
+.videotextdiv {
+    text-wrap: wrap;
+    margin-left: 1.3rem;
+}
+
+.playbtnclass .hover-img {
+    display: none;
+    /* Initially hide the hover image */
+}
+
+.playbtnclass:hover .default-img {
+    display: none;
+    /* Hide default image on hover */
+}
+
+.playbtnclass:hover .hover-img {
+    display: block;
+    /* Display hover image on hover */
+}
+
+.playbtnclass:active .hover-img {
+    display: none;
+    /* Hide hover image when pressed */
+}
+
+
+
+#videoPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
+    background-color: #EAEAEA;
+}
+
+#testimonysection2 {
+    display: none;
+}
+
+#testimonysection {
+    padding: 3rem;
+    position: relative;
+    bottom: 5rem;
+}
+
+#testimony {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.midbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 60vw;
+    /* height: 17rem; */
+    height: 16rem;
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+    box-shadow: 0 2px 2px 1px rgba(5, 5, 5, 0.1);
+
+    /* flex: 0 0 100%;
+    width: 100%; */
+}
+
+.imgdiv {
+    width: 32%;
+    /* Adjust this value according to your layout */
+    /* float: left; */
+    height: auto;
+
+    border-radius: 1rem 0rem 0rem 1rem;
+    background-image: url('./assets/Mask\ Group\ \(3\).png');
+    object-fit: cover;
+    background-size: contain;
+    background-position: center start;
+    background-repeat: no-repeat;
+    /* height: auto; */
+}
+
+#profile-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.remarkdiv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #194D44;
+    padding: 1.5rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    /* width: 100%; */
+    width: 70%;
+    /* Adjust this value according to your layout */
+    /* float: left; */
+    overflow: hidden;
+    /* float: left; */
+}
+
+.remarkheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.remarkheading h2 {
+    margin-bottom: 0;
+}
+
+.remarkpara p {
+    font-size: 1rem;
+    /* padding: 0.5rem; */
+    font-style: italic;
+    overflow: hidden;
+}
+
+.remarkheading img {
+    height: 2.5rem;
+    /* width: 2rem ; */
+
+}
+
+.slider {
+    position: relative;
+    /* Add any additional styles for the carousel container */
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 4rem;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* Ensures the shape is circular */
+    background-color: #ccc;
+    /* Default color */
+    margin: 0 1rem;
+    /* Adjust spacing between indicators */
+}
+
+/* Style for the active indicator */
+.indicator.active {
+    background-color: #5BC8AF;
+    /* Change to desired active color */
+}
+
+.sidebtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebtn:hover {
+    color: #305D52;
+}
+
+.sidebtn svg path {
+    transition: fill 0.2s ease;
+}
+
+.sidebtn:hover svg path {
+    fill: #5BC8AF;
+    /* Change to the desired color */
+}
+
+
+
+
+/* .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    width: 100%; 
+    transition: transform 0.5s ease;
+}
+#left {
+    left: 10px;
+}
+
+#right {
+    right: 10px;
+} */
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    /* margin-top: 10px; */
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    outline: 0;
+    border: 1px solid white;
+    /* Set border transparent by default */
+    font-size: 1rem;
+    color: white;
+    padding: 7px 0.5rem;
+    background: transparent;
+    transition: 0.2s;
+}
+
+.form__field::placeholder {
+    color: white;
+
+}
+
+.form__field:focus::placeholder {
+    color: white;
+    /* Ensure placeholder remains white when input is focused */
+}
+
+.form__label {
+    position: absolute;
+    
+    top: 1.8rem;
+    left: 0.5rem;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: white;
+}
+
+.form__field:focus~.form__label,
+.form__field:not(:placeholder-shown)~.form__label {
+    top: 0.5rem;
+    /* Move label up when input is focused or placeholder is shown */
+    /* left: 1rem; */
+    background-color: rgba(41, 118, 102, 1);
+    font-size: 12px;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    z-index: 1;
+    /* Ensure input is above label */
+    border: 1px solid white;
+    /* Change border color when input is focused */
+
+}
+
+
+.error {
+    border-color: red !important;
+    /* Override any existing border-color */
+}
+
+.error~.form__label {
+    color: red;
+}
+
+
+
+
+
+/* MEDIA QUERIES START */
+@media screen and (min-width: 1270px) and (max-width: 1450px) {
+    .imgdiv {
+        width: 40%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1270px) {
+    .herohead {
+        font-size: 3rem;
+    }
+
+    .intervention {
+        font-size: 3rem;
+
+    }
+
+    form {
+        width: auto;
+    }
+
+    .banner {
+        width: 40%;
+    }
+
+    /* .remarkpara p{
+        font-size: 0.8rem;
+    } */
+    .imgdiv {
+        width: 40%;
+        background-size: cover;
+        background-position: center center;
+    }
+    .form__label{
+
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .linksection {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .herohead {
+        font-size: 3rem;
+        /* width: 50%; */
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .intervention {
+        font-size: 3rem;
+    }
+
+    .content {
+        flex-direction: column;
+        /* gap: 0; */
+    }
+
+    .banner {
+        width: 80%;
+        padding-bottom: 0;
+    }
+
+    .banner h2 {
+        text-align: center;
+        /* Add margin to separate h2 from p */
+    }
+
+    #bannertext {
+        text-align: center;
+    }
+
+    .form-container {
+        width: auto;
+        padding: 0;
+    }
+
+    form {
+        width: 25rem;
+    }
+
+    .banner,
+    .form-container {
+        flex: 1;
+        margin: 0 1rem;
+        /* Adjust spacing between banner and form container */
+    }
+
+    .we {
+        font-size: 2rem;
+    }
+
+    .understand {
+        font-size: 2rem;
+    }
+
+    #weunderstand {
+        padding: 2rem
+    }
+
+    #organize {
+        padding: 1rem
+    }
+
+    .paragrid :nth-child(1) {
+        grid-column: span 2;
+    }
+
+    .paragrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btn-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #btn {
+        height: auto;
+    }
+
+
+    /* #paragraphgrid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+    } */
+    #paragraphgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two columns */
+        gap: 20px;
+        /* Adjust the gap as needed */
+    }
+
+    .moved-textdiv {
+        grid-column: 1 / 2;
+        /* Span both columns */
+    }
+
+    .moved-div {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        /* Span both columns */
+
+    }
+
+    .videosection {
+        flex-direction: column;
+    }
+
+    .infodivinner {
+        width: 100%;
+    }
+
+    .infodiv {
+        display: block;
+        /* width: 100%; */
+        width: auto;
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    .videoparadiv {
+        width: auto;
+    }
+
+    .playerdiv {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .playbtnclass {
+        position: relative;
+        bottom: 15rem;
+    }
+
+    .videotextdiv {
+        width: auto;
+    }
+
+    #videosectionwatch {
+        text-align: center;
+    }
+
+    .watch {
+        font-size: 2rem;
+
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #testimonysection {
+        padding: 1rem;
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .remarkpara p {
+        font-size: 0.8rem;
+    }
+
+    .remarkheading img {
+        height: 2rem;
+        /* width: 2rem ; */
+
+    }
+
+    .midbox {
+        height: 13rem;
+    }
+
+    .remarkdiv {
+        padding: 1rem;
+    }
+
+    .sidebtn {
+        display: none;
+    }
+
+    .midbox {
+        width: auto;
+    }
+
+    .imgdiv {
+        width: 40%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+    .form__label{
+
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 520px) and (min-width: 360px) {
+    form {
+        width: 18rem;
+    }
+
+    .herohead {
+        font-size: 2.5rem;
+
+    }
+
+    .intervention {
+        font-size: 2.5rem;
+    }
+
+    .midbox {
+        height: 11rem;
+        gap: 1rem;
+    }
+
+    .imgdiv {
+        width: 40%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 360px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 24px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Hide the menu by default */
+    .linksection,
+    div[style="font-weight: bold;"] {
+        display: none;
+    }
+
+    /* Show the menu when the 'show' class is added */
+    .linksection.show,
+    div[style="font-weight: bold;"].show {
+        display: flex;
+        flex-direction: column;
+
+        .links {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    .hamburger-btn.active .bar {
+        display: none;
+    }
+
+    form {
+        width: 16rem;
+        height: auto;
+        padding: 2rem 0.7rem;
+    }
+
+    #emailbox {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #namebox {
+        flex-direction: column;
+        gap: 0;
+        margin: auto;
+    }
+
+
+    .buttondiv {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    #formbutton {
+        width: 100%;
+
+    }
+
+    .herohead {
+        font-size: 2rem;
+
+    }
+
+    .intervention {
+        font-size: 2rem;
+    }
+
+    .box {
+        display: none;
+    }
+
+    #paragraphgrid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #weunderstand {
+        padding: 1rem;
+    }
+
+    .we {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .understand {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .paragrid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+
+    .btn-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.7rem;
+
+    }
+
+    #organize .weunderstandhone {
+        margin-right: -4rem;
+    }
+
+    .infodiv {
+        padding: 2rem;
+    }
+
+    #videosectionwatch {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .watch {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+
+    .videoparadiv h2 {
+        font-size: 1rem;
+    }
+
+    .playerdiv {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .playerdiv {
+        background-image: url('./assets/Mask\ Group\ \(7\).png');
+        object-fit: cover;
+    }
+
+    .playbtnclass {
+        position: relative;
+        bottom: 7rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    /* .midbox .imgdiv{
+        position: relative;
+        bottom: 3rem;
+        width: 100%;
+    } */
+    #testimonysection {
+        display: none;
+    }
+
+    #testimonysection2 {
+        display: block;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem;
+        margin-top: 2rem;
+        color: white;
+        background-color: #194D44;
+        box-shadow: 0 2px 2px 1px rgba(5, 5, 5, 0.5);
+    }
+
+    #uppersection {
+        display: flex;
+        justify-content: space-between;
+        justify-items: end;
+        gap: 2rem;
+        width: 100%;
+        /* height: 17rem; */
+        height: 10rem;
+        position: relative;
+        bottom: 2rem;
+
+    }
+
+    #colon {
+        align-self: flex-end;
+    }
+
+    #img-div {
+        width: 100%;
+        height: 100%;
+        background-image: url("./assets/Mask Group (3).png");
+        object-fit: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: 0 2px 2px 1px rgba(5, 5, 5, 0.1);
+
+    }
+
+
+}
